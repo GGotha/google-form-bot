@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "puppeteer": "^13.5.2"
+    "axios": "^0.26.1",
+    "puppeteer": "^13.5.2",
+    "qs": "^6.10.3"
   }
 }

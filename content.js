@@ -9,11 +9,14 @@ class Content {
     const browser = await puppeteer.launch({ headless: true });
 
     const page = await browser.newPage();
+
+    await page.setDefaultNavigationTimeout(0);
+
+    var contador = 0;
+
     await page.goto(FORM_LINK, {
       waitUntil: "networkidle0",
     });
-
-    var contador = 0;
 
     while (1 === 1) {
       try {
