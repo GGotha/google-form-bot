@@ -71,6 +71,13 @@ function App() {
           >
             Votar a cada .5s
           </Button>
+          <Button
+            bgColor="black"
+            color="white"
+            onClick={() => voteEachSeconds(100)}
+          >
+            Votar a cada .1s
+          </Button>
           <Box mx={1} />
           <Button bgColor="red" color="white" onClick={onStop}>
             Parar
