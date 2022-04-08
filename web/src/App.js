@@ -71,6 +71,7 @@ function App() {
           >
             Votar a cada .5s
           </Button>
+          <Box mx={1} />
           <Button
             bgColor="black"
             color="white"
