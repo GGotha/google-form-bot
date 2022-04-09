@@ -1,12 +1,15 @@
 const puppeteer = require("puppeteer");
 
 const OPTION_NUMBER = 4;
-const FORM_LINK =
-  "https://docs.google.com/forms/d/e/1FAIpQLSdZDiHCztvOE4SOICzZBPAMWfdYnbMm5WVPiHedSjB-6y0Klg/viewform";
+// const FORM_LINK =
+//   "https://docs.google.com/forms/d/e/1FAIpQLSdZDiHCztvOE4SOICzZBPAMWfdYnbMm5WVPiHedSjB-6y0Klg/viewform";
 
-class Content {
-  async start() {
-    const browser = await puppeteer.launch({ headless: true });
+const FORM_LINK =
+  "https://docs.google.com/forms/d/e/1FAIpQLScdyjvRkSVja8cuWwFhlg_mc2iz_s6KMkmNFDhC1nz2nSSQfg/viewform";
+
+class Bot {
+  async run() {
+    const browser = await puppeteer.launch({ headless: false });
 
     const page = await browser.newPage();
 
@@ -49,4 +52,4 @@ class Content {
   }
 }
 
-module.exports = new Content();
+module.exports = new Bot();
