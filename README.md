@@ -1,14 +1,14 @@
 <p align="center">
     <img
-      alt="Google Forms Bot"
+      alt="Google Form Bot"
       src="https://play-lh.googleusercontent.com/emmbClh_hm0WpWZqJ0X59B8Pz1mKoB9HVLkYMktxhGE6_-30SdGoa-BmYW73RJ8MGZQ"
       width="300"
     />
 </p>
 
-<p style="font-size: 38px;">Google Forms Bot<p>
+# Google Form Bot
 
-# Content
+## Summary
 
 - [Introduction](#introduction)
 - [Technologies](#technologies)
@@ -39,7 +39,7 @@ This project was created with the purpose to learn more about how bots currently
 
 ## First Steps
 
-    git clone https://github.com/GGotha/ibr-votacao
+    git clone https://github.com/GGotha/google-form-bot
     cd web
     npm install
     cd puppeteer
@@ -73,7 +73,7 @@ This project was created with the purpose to learn more about how bots currently
 
 Puppeteer is a technology popular on E2E tests and it's great tool to work with bots
 
-<!-- ![Alt Text]("./images/puppeteer.gif") -->
+<img src="./images/puppeteer.gif" width="600" height="600" />
 
 #### Pros
 
@@ -82,6 +82,7 @@ Puppeteer is a technology popular on E2E tests and it's great tool to work with 
 #### Cons
 
 - Require a lot of CPU and RAM
+- Slow
 
 ### How to start
 
@@ -91,7 +92,9 @@ node index.js
 
 ### <b>CurL</b>
 
-This module works with curL. CurL is a tool to handle with http requests
+This module works with curL. CurL is a tool to handle with http requests. You can set the delay between votes inside script.sh
+
+<img src="./images/script.gif" width="500" height="300" />
 
 #### Pros
 
@@ -105,7 +108,7 @@ This module works with curL. CurL is a tool to handle with http requests
 
 ```
 GOOGLE_FORM_URL=?
-delay=0.05
+TIME_BETWEEN_VOTES=?
 ```
 
 ### How to start
@@ -117,6 +120,8 @@ delay=0.05
 ### <b>Web</b>
 
 This module is a web module to vote in a Web Page so you can send it to your friends and they can vote as well
+
+<img src="./images/web.gif" width="500" height="500" />
 
 #### Pros
 
