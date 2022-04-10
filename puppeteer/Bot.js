@@ -1,11 +1,9 @@
 const puppeteer = require("puppeteer");
 
 const OPTION_NUMBER = 4;
-// const FORM_LINK =
-//   "https://docs.google.com/forms/d/e/1FAIpQLSdZDiHCztvOE4SOICzZBPAMWfdYnbMm5WVPiHedSjB-6y0Klg/viewform";
-
 const FORM_LINK =
-  "https://docs.google.com/forms/d/e/1FAIpQLScdyjvRkSVja8cuWwFhlg_mc2iz_s6KMkmNFDhC1nz2nSSQfg/viewform";
+  "https://docs.google.com/forms/d/e/1FAIpQLSdZDiHCztvOE4SOICzZBPAMWfdYnbMm5WVPiHedSjB-6y0Klg/viewform";
+
 
 class Bot {
   async run() {
